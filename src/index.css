@@ -1,0 +1,21 @@
+@font-face {
+    font-family: cyberpunk;
+    src: url(asset/font/cyberpunk.ttf);
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: caveat;
+    src: url(asset/font/Caveat-VariableFont_wght.ttf);
+}
+
+body {
+    text-align: center;
+    padding: 2.5%;
+    font-family: 'caveat';
+}
+
+
+h1, h2, h3, h4, h5 {
+    font-family: 'cyberpunk';
+}
