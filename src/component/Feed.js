@@ -4,10 +4,14 @@ import Loading from "./HOC/Loading";
 
 class Feed extends Component {
   render() {
+    console.log(this.props);
     const { loadingTime } = this.props;
     return (
       <div className="feed">
-        <FeedItem contacts={this.props.contacts} />
+        {this.props.contacts.map(
+          contact => <FeedItem contact={contact} />
+        )}
+        {/* <FeedItem contacts={this.props.contacts} /> */}
         <p>Loading time {loadingTime} seconds</p>
       </div>
     );
