@@ -11,7 +11,6 @@ class Feed extends Component {
         {this.props.contacts.map(
           contact => <FeedItem contact={contact} />
         )}
-        {/* <FeedItem contacts={this.props.contacts} /> */}
         <p>Loading time {loadingTime} seconds</p>
       </div>
     );
